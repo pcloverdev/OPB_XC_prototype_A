@@ -1,0 +1,10 @@
+{
+  "name": "crossover-detector",
+  "version": "0.1.0",
+  "description": "On-device MediaPipe Pose Landmarker crossover detector (native VisionCamera frame processor + heuristic state machine).",
+  "main": "index.ts",
+  "author": "OPB",
+  "license": "MIT",
+  "homepage": "https://opb.local/crossover-detector",
+  "private": true
+}

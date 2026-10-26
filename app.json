@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "OPB Crossover",
+    "slug": "opb-xc-prototype",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.opb.xcprototype",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Used to detect and count basketball crossovers in real time.",
+        "NSPhotoLibraryUsageDescription": "Used to select a pre-recorded video to analyze for crossovers."
+      }
+    },
+    "android": {
+      "package": "com.opb.xcprototype",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "Used to detect and count basketball crossovers in real time.",
+          "enableFrameProcessors": true,
+          "enableLocation": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Used to select a pre-recorded video to analyze for crossovers."
+        }
+      ],
+      "expo-video",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ],
+      "expo-audio",
+      "expo-asset"
+    ]
+  }
+}
